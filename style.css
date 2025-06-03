@@ -68,7 +68,7 @@ p {
   width: 90%;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 20px; /* Ajuste para melhor responsividade em telas menores */
+  padding: 0 20px;
 }
 
 .btn {
@@ -142,7 +142,6 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-/* Pré-carregamento */
 #preloader {
   position: fixed;
   top: 0;
@@ -176,7 +175,6 @@ p {
   to { transform: rotate(360deg); }
 }
 
-/* Header */
 header {
   position: fixed;
   top: 0;
@@ -264,7 +262,6 @@ header {
   color: var(--darker);
 }
 
-/* Mobile Navigation */
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -335,7 +332,6 @@ header {
   visibility: visible;
 }
 
-/* Hero Section */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -401,7 +397,6 @@ header {
   display: block;
 }
 
-/* Stats Section */
 .stats {
   background: var(--darker);
   color: white;
@@ -432,7 +427,6 @@ header {
   color: transparent;
 }
 
-/* Features Section */
 .features .section-title h2:after {
   background: var(--accent);
 }
@@ -491,7 +485,6 @@ header {
   color: var(--primary);
 }
 
-/* Products Section */
 .products {
   background: var(--light);
 }
@@ -563,7 +556,6 @@ header {
   margin: 10px 0;
 }
 
-/* Product Carousel */
 .carousel-container {
   position: relative;
   max-width: 1200px;
@@ -576,13 +568,13 @@ header {
   transition: transform 0.5s ease-in-out;
   gap: 30px;
   padding: 20px 0;
-  width: fit-content; /* Garante que o carrossel se ajuste ao conteúdo */
+  width: fit-content;
 }
 
 .carousel-item {
-  min-width: 300px; /* Base para desktop */
+  min-width: 300px;
   flex: 0 0 auto;
-  flex-shrink: 0; /* Impede que os itens encolham abaixo do min-width */
+  flex-shrink: 0;
 }
 
 .carousel-btn {
@@ -639,7 +631,6 @@ header {
   transform: scale(1.2);
 }
 
-/* Gallery Section */
 .gallery {
   position: relative;
   background: linear-gradient(135deg, #f0f4f8 0%, #e6edf7 100%);
@@ -698,7 +689,6 @@ header {
   transform: translateY(0);
 }
 
-/* Testimonials Section */
 .testimonials {
   background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
   color: white;
@@ -751,12 +741,11 @@ header {
   opacity: 0.2;
 }
 
-/* Ajustes para o texto dos depoimentos */
 .testimonial-card p {
-  font-size: 1.1rem; /* Aumenta o tamanho da fonte para melhor legibilidade */
-  line-height: 1.6; /* Melhora o espaçamento entre as linhas */
-  color: #ffffff; /* Garante a cor branca do texto */
-  margin-bottom: 0; /* Remove margem inferior padrão de parágrafos */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 0;
 }
 
 .testimonial-author {
@@ -779,21 +768,18 @@ header {
   object-fit: cover;
 }
 
-/* Ajustes para o nome e descrição do autor */
 .testimonial-author h4 {
-  font-size: 1.25rem; /* Tamanho da fonte para o nome */
-  margin-bottom: 5px; /* Espaçamento menor entre nome e descrição */
+  font-size: 1.25rem;
+  margin-bottom: 5px;
   color: white;
 }
 
 .testimonial-author p {
-  font-size: 0.95rem; /* Tamanho da fonte para a descrição */
-  color: rgba(255, 255, 255, 0.8); /* Cor mais suave para a descrição */
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 0;
 }
 
-
-/* Team Section */
 .team {
   background: var(--light);
 }
@@ -858,7 +844,6 @@ header {
   transform: translateY(-3px);
 }
 
-/* CTA Section */
 .cta {
   background: linear-gradient(135deg, var(--darker) 0%, #1e293b 100%);
   color: white;
@@ -894,7 +879,6 @@ header {
   background: var(--accent);
 }
 
-/* Contact Section */
 .contact {
   background: white;
 }
@@ -973,7 +957,6 @@ header {
   resize: vertical;
 }
 
-/* Footer */
 .footer {
   background: var(--darker);
   color: white;
@@ -1066,7 +1049,6 @@ header {
   font-size: 0.9rem;
 }
 
-/* Botão Voltar ao Topo */
 .back-to-top {
   position: fixed;
   bottom: 30px;
@@ -1098,7 +1080,6 @@ header {
   transform: translateY(-5px) translateZ(5px);
 }
 
-/* Elementos Decorativos */
 .floating-element {
   position: absolute;
   z-index: -1;
@@ -1138,7 +1119,6 @@ header {
   100% { transform: translateY(0) rotate(0deg); }
 }
 
-/* Media Queries */
 @media (max-width: 992px) {
   .nav-menu, .nav-cta {
     display: none;
@@ -1150,7 +1130,7 @@ header {
   
   .hero .grid {
     grid-template-columns: 1fr;
-    gap: 30px; /* Ajuste o gap para mobile */
+    gap: 30px;
   }
   
   .hero-image {
@@ -1158,28 +1138,28 @@ header {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    transform: none; /* Remove transformações 3D no mobile para melhor performance */
+    transform: none;
   }
 
   .hero-image:hover {
-    transform: none; /* Remove hover effects no mobile */
+    transform: none;
   }
 
   .grid-cols-2, .grid-cols-3, .grid-cols-4 {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajuste a largura mínima para grids */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 
   .product-card, .feature-card, .testimonial-card, .team-member {
-    transform: none !important; /* Desativa 3D hover para mobile */
+    transform: none !important;
   }
 
   .product-card:hover, .feature-card:hover, .testimonial-card:hover, .team-member:hover {
-    transform: translateY(-5px) !important; /* Mantém apenas um pequeno efeito de elevação */
+    transform: translateY(-5px) !important;
     box-shadow: var(--shadow-md) !important;
   }
 
   .carousel-container {
-    padding: 0 15px; /* Adiciona padding para o carrossel em telas menores */
+    padding: 0 15px;
   }
 
   .carousel-btn {
@@ -1189,14 +1169,14 @@ header {
   }
   
   .prev-btn {
-    left: 0px; /* Ajusta a posição dos botões do carrossel */
+    left: 0px;
   }
   .next-btn {
-    right: 0px; /* Ajusta a posição dos botões do carrossel */
+    right: 0px;
   }
 
   .gallery-item {
-    height: 250px; /* Ajusta a altura da galeria para mobile */
+    height: 250px;
   }
 }
 
@@ -1215,7 +1195,7 @@ header {
   }
   
   .grid-cols-2, .grid-cols-3, .grid-cols-4 {
-    grid-template-columns: 1fr; /* Força uma coluna em telas menores */
+    grid-template-columns: 1fr;
   }
   
   .contact-grid {
@@ -1223,27 +1203,27 @@ header {
   }
   
   .carousel-item {
-    min-width: 95%; /* Ajusta a largura do item do carrossel para preencher a tela */
+    min-width: 95%;
   }
 
   .carousel {
-    padding: 20px 0; /* Garante padding mesmo com um único item */
+    padding: 20px 0;
   }
 
   .section-title {
-    margin-bottom: 50px; /* Reduz a margem inferior do título da seção */
+    margin-bottom: 50px;
   }
 
   h1 {
-    font-size: clamp(2rem, 8vw, 3rem); /* Torna o H1 menor em mobile */
+    font-size: clamp(2rem, 8vw, 3rem);
   }
 
   h2 {
-    font-size: clamp(1.8rem, 7vw, 2.5rem); /* Torna o H2 menor em mobile */
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
   }
 
   .footer-grid {
-    grid-template-columns: 1fr; /* Coluna única no rodapé */
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
@@ -1304,11 +1284,11 @@ header {
   .form-group input,
   .form-group textarea,
   .form-group select {
-    padding: 12px 15px; /* Reduz o padding dos campos de formulário */
+    padding: 12px 15px;
     font-size: 0.95rem;
   }
 
   .logo img {
-    height: 50px; /* Reduz o tamanho do logo em telas muito pequenas */
+    height: 50px;
   }
-    }
+  }
