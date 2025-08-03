@@ -1,621 +1,216 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="no-js">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Maga Lanches">
-  <meta name="description" content="Confeitaria premium com bolos, doces e salgados artesanais feitos com amor">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Maga Lanches | Confeitaria Premium">
-  <meta property="og:description" content="Descubra nossos deliciosos bolos, doces e salgados artesanais">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1550617931-e17a7b70dce2">
-  
-  <title>Maga Lanches | Confeitaria Premium</title>
-  
-  <!-- Fontes e ícones -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- CSS separado -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maga Lanches | Confeitaria Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="preloader">
-    <div class="preloader-content">
-      <div class="preloader-spinner"></div>
-      <p>Preparando delícias para você...</p>
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-spinner"></div>
+            <p>Preparando delícias para você...</p>
+        </div>
     </div>
-  </div>
 
-  <div class="floating-element floating-element-1"></div>
-  <div class="floating-element floating-element-2"></div>
-  <div class="floating-element floating-element-3"></div>
+    <header>
+        <nav class="nav container">
+            <a href="#home" class="logo">
+                <img src="https://i.supaimg.com/2dbbbd6c-6d54-44ec-b651-a115ee2aae71.png" alt="Maga Lanches Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">Fazer Pedido</a>
+            </div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
 
-  <a href="#main-content" class="sr-only">Pular para o conteúdo principal</a>
-
-  <header>
-    <nav class="nav container" aria-label="Navegação principal">
-      <a href="#home" class="logo">
-        <img src="https://i.supaimg.com/2dbbbd6c-6d54-44ec-b651-a115ee2aae71.png" alt="Maga Lanches Logo">
-      </a>
-      <ul class="nav-menu">
-        <li><a href="#home" aria-current="page">Início</a></li>
-        <li><a href="#products">Produtos</a></li>
-        <li><a href="#gallery">Galeria</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#testimonials">Depoimentos</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a href="#contact" class="btn btn-primary">Fazer Pedido</a>
-      </div>
-      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
-  </header>
-
-  <div class="mobile-nav" id="mobileNav">
-    <button class="mobile-nav-close" aria-label="Fechar menu">
-      <i class="fas fa-times"></i>
-    </button>
-    <ul>
-      <li><a href="#home">Início</a></li>
-      <li><a href="#products">Produtos</a></li>
-      <li><a href="#gallery">Galeria</a></li>
-      <li><a href="#about">Sobre Nós</a></li>
-      <li><a href="#testimonials">Depoimentos</a></li>
-      <li><a href="#contact">Contato</a></li>
-    </ul>
-    <div style="padding: 20px;">
-      <a href="#contact" class="btn btn-primary" style="margin-top: 20px; display: block;">Fazer Pedido</a>
-    </div>
-  </div>
-  <div class="overlay" id="overlay"></div>
-
-  <main id="main-content">
-    <!-- Hero Section -->
     <section id="home" class="hero section">
-      <div class="container grid grid-cols-2">
-        <div class="hero-content">
-          <h1>Transforme momentos especiais em <span style="color: var(--primary);">doces memórias</span></h1>
-          <p>Na Maga Lanches, cada bolo, doce e salgado é feito com amor e ingredientes de alta qualidade para encantar seu paladar.</p>
-          <div class="hero-buttons">
-            <a href="#products" class="btn btn-primary">
-              <i class="fas fa-birthday-cake"></i> Ver Produtos
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <i class="fas fa-calendar-check"></i> Fazer Pedido
-            </a>
-          </div>
+        <div class="container grid grid-cols-2">
+            <div class="hero-content">
+                <h1>Transforme momentos em <span class="gold-accent">experiências</span> memoráveis</h1>
+                <p>Na Maga Lanches, cada criação é uma obra de arte comestível, feita com ingredientes premium e um toque de magia.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        <i class="fas fa-birthday-cake"></i> Ver Cardápio
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-calendar-check"></i> Reservar Evento
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80" alt="Bolo decorado da Maga Lanches" loading="lazy">
+            </div>
         </div>
-        <div class="hero-image">
-          <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80" alt="Bolo decorado da Maga Lanches" loading="lazy">
-        </div>
-      </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats section">
-      <div class="container grid grid-cols-4">
-        <div class="stat-card">
-          <div class="stat-number">98%</div>
-          <p>Satisfação do Cliente</p>
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-content">
+                <h2>Confeitaria Artesanal <span class="gold-accent">Premium</span></h2>
+                <p>Cada criação Maga Lanches é feita sob medida para transformar seus momentos especiais em memórias inesquecíveis, com sabores que encantam e apresentação que impressiona.</p>
+                <a href="#products" class="btn btn-primary">
+                    <i class="fas fa-star"></i> Descubra Nossas Criações
+                </a>
+            </div>
         </div>
-        <div class="stat-card">
-          <div class="stat-number">500+</div>
-          <p>Eventos Atendidos</p>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">10+</div>
-          <p>Anos de Experiência</p>
-        </div>
-        <div class="stat-card">
-          <div class="stat-number">100+</div>
-          <p>Receitas Exclusivas</p>
-        </div>
-      </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Nossos Diferenciais</h2>
-          <p>Descubra o que torna nossos produtos especiais</p>
+    <section id="products" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossas <span class="gold-accent">Especialidades</span></h2>
+                <p>Descubra nossas criações exclusivas que elevam a arte da confeitaria a outro nível</p>
+            </div>
+
+            <div class="grid grid-cols-3">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Bolo de Casamento" loading="lazy">
+                        <div class="product-tag">Mais Pedido</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Bolo Nupcial Premium</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>Bolo de nozes com recheio de creme de avelã e cobertura de chantilly, decorado com flores comestíveis e folhas de ouro.</p>
+                        <div class="product-price">280,00</div>
+                        <a href="#contact" class="btn btn-primary">Reservar</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Cupcakes Gourmet" loading="lazy">
+                        <div class="product-tag">Coleção</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Coleção de Cupcakes</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Caixa com 12 cupcakes premium: 4 de chocolate belga, 4 de baunilha com framboesa e 4 de limão siciliano com merengue.</p>
+                        <div class="product-price">120,00</div>
+                        <a href="#contact" class="btn btn-primary">Encomendar</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1552689486-f6773047d19f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Torta de Chocolate" loading="lazy">
+                        <div class="product-tag">Assinatura</div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Torta Signature</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>Torta premium com 3 camadas de chocolate belga, recheio de creme de avelã e calda de framboesa, finalizada com folhas de ouro.</p>
+                        <div class="product-price">180,00</div>
+                        <a href="#contact" class="btn btn-primary">Experimentar</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="grid grid-cols-3">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-seedling"></i>
-            </div>
-            <h3>Ingredientes Frescos</h3>
-            <p>Utilizamos apenas ingredientes frescos e de alta qualidade, sem conservantes ou aditivos artificiais.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-heart"></i>
-            </div>
-            <h3>Feito com Amor</h3>
-            <p>Cada produto é preparado com carinho e atenção aos detalhes, como se fosse para nossa própria família.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <h3>Design Personalizado</h3>
-            <p>Criamos bolos e doces personalizados para tornar seu evento único e inesquecível.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-leaf"></i>
-            </div>
-            <h3>Opções Saudáveis</h3>
-            <p>Temos linha de produtos com menos açúcar, sem glúten e veganos para atender a todos os gostos.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-truck"></i>
-            </div>
-            <h3>Entrega Premium</h3>
-            <p>Entregamos com todo cuidado e pontualidade para garantir que seus produtos cheguem perfeitos.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <h3>Qualidade Garantida</h3>
-            <p>Compromisso com excelência em sabor, apresentação e atendimento em todos os nossos produtos.</p>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="products section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Nossas Delícias</h2>
-          <p>Conheça nossos produtos mais populares</p>
-        </div>
-        
-        <div class="carousel-container">
-          <div class="carousel" id="productCarousel">
-            <div class="carousel-item">
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Bolo de Casamento" loading="lazy">
-                  <div class="product-tag">Mais Vendido</div>
-                </div>
-                <div class="product-content">
-                  <h3>Bolo de Casamento</h3>
-                  <div class="product-rating">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                  </div>
-                  <p>Bolo de nozes com recheio de creme de avelã e cobertura de chantilly, decorado com flores comestíveis.</p>
-                  <div class="product-price">R$ 280,00</div>
-                  <a href="#contact" class="btn btn-primary">Encomendar</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="carousel-item">
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="https://images.unsplash.com/photo-1519869325930-281384150729?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Cupcakes Gourmet" loading="lazy">
-                  <div class="product-tag">Promoção</div>
-                </div>
-                <div class="product-content">
-                  <h3>Cupcakes Gourmet</h3>
-                  <div class="product-rating">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <p>Caixa com 6 cupcakes: 2 de chocolate belga, 2 de baunilha com framboesa e 2 de limão siciliano.</p>
-                  <div class="product-price">R$ 65,00</div>
-                  <a href="#contact" class="btn btn-primary">Encomendar</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="carousel-item">
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Salgados Finos" loading="lazy">
-                </div>
-                <div class="product-content">
-                  <h3>Salgados Finos</h3>
-                  <div class="product-rating">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                  </div>
-                  <p>Seleção de 30 salgados: croissants, empadinhas, quiches e folhados com recheios gourmet.</p>
-                  <div class="product-price">R$ 120,00</div>
-                  <a href="#contact" class="btn btn-primary">Encomendar</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="carousel-item">
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="https://images.unsplash.com/photo-1552689486-f6773047d19f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Torta de Chocolate" loading="lazy">
-                  <div class="product-tag">Novidade</div>
-                </div>
-                <div class="product-content">
-                  <h3>Torta de Chocolate</h3>
-                  <div class="product-rating">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                  </div>
-                  <p>Torta premium com 3 camadas de chocolate belga, recheio de creme de avelã e calda de framboesa.</p>
-                  <div class="product-price">R$ 95,00</div>
-                  <a href="#contact" class="btn btn-primary">Encomendar</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="carousel-item">
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Bolo de Aniversário" loading="lazy">
-                </div>
-                <div class="product-content">
-                  <h3>Bolo de Aniversário</h3>
-                  <div class="product-rating">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <p>Bolo personalizado com tema de sua escolha, massa de baunilha com recheio de frutas vermelhas.</p>
-                  <div class="product-price">R$ 150,00</div>
-                  <a href="#contact" class="btn btn-primary">Encomendar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <button class="carousel-btn prev-btn" id="prevBtn">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button class="carousel-btn next-btn" id="nextBtn">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-          
-          <div class="carousel-indicators" id="carouselIndicators"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Nossa Galeria</h2>
-          <p>Alguns dos nossos trabalhos mais especiais</p>
-        </div>
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Bolo de aniversário" loading="lazy">
-            </div>
-            <div class="gallery-overlay">
-              <h3>Bolo de Aniversário</h3>
-              <p>Com tema de unicórnio e confeitos coloridos</p>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Doces finos" loading="lazy">
-            </div>
-            <div class="gallery-overlay">
-              <h3>Doces Finos</h3>
-              <p>Seleção de macarons, brigadeiros e trufas</p>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="https://images.unsplash.com/photo-1602351447937-745cb720612f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Torta de frutas" loading="lazy">
-            </div>
-            <div class="gallery-overlay">
-              <h3>Torta de Frutas</h3>
-              <p>Com frutas frescas da estação e massa amanteigada</p>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <div class="gallery-image">
-              <img src="https://images.unsplash.com/photo-1608190003443-86b2636f1b0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Salgados para festa" loading="lazy">
-            </div>
-            <div class="gallery-overlay">
-              <h3>Salgados para Festa</h3>
-              <p>Variedade de opções para eventos e reuniões</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="about" class="team section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Nossa Equipe</h2>
-          <p>Especialistas em criar momentos doces</p>
-        </div>
-        <div class="grid grid-cols-4">
-          <div class="team-member">
-            <div class="member-image">
-              <img src="https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80" alt="Maga, fundadora" loading="lazy">
-            </div>
-            <div class="member-info">
-              <h3>Maga Oliveira</h3>
-              <p>Fundadora e Chef Confeiteira</p>
-              <div class="member-social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="team-member">
-            <div class="member-image">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80" alt="Fernanda Santos" loading="lazy">
-            </div>
-            <div class="member-info">
-              <h3>Fernanda Santos</h3>
-              <p>Especialista em Decoração</p>
-              <div class="member-social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="team-member">
-            <div class="member-image">
-              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80" alt="Ricardo Almeida" loading="lazy">
-            </div>
-            <div class="member-info">
-              <h3>Ricardo Almeida</h3>
-              <p>Chef de Salgados</p>
-              <div class="member-social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="team-member">
-            <div class="member-image">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500&q=80" alt="Juliana Lima" loading="lazy">
-            </div>
-            <div class="member-info">
-              <h3>Juliana Lima</h3>
-              <p>Atendimento ao Cliente</p>
-              <div class="member-social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Depoimentos</h2>
-          <p>O que nossos clientes dizem sobre nossos produtos</p>
-        </div>
-        <div class="grid grid-cols-3">
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <i class="fas fa-quote-left"></i>
-              <p>"O bolo de casamento que a Maga Lanches fez foi o ponto alto da nossa festa! Todos elogiaram o sabor e a decoração linda. Super recomendo!"</p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" alt="Carlos Silva" loading="lazy">
-              </div>
-              <div>
-                <h4>Carlos Silva</h4>
-                <p>Cliente - Casamento</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <i class="fas fa-quote-left"></i>
-              <p>"Contratei a Maga Lanches para o aniversário da minha filha e fiquei encantada! Os doces eram deliciosos e a decoração combinou perfeitamente com o tema da festa."</p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" alt="Amanda Costa" loading="lazy">
-              </div>
-              <div>
-                <h4>Amanda Costa</h4>
-                <p>Cliente - Aniversário</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <i class="fas fa-quote-left"></i>
-              <p>"Os salgados da Maga Lanches são os melhores que já provei! Sempre que tenho reuniões importantes na empresa, encomendo e todos adoram."</p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-avatar">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100&q=80" alt="Roberto Mendes" loading="lazy">
-              </div>
-              <div>
-                <h4>Roberto Mendes</h4>
-                <p>Cliente Corporativo</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="cta section">
-      <div class="container">
-        <div class="cta-content">
-          <h2>Pronto para Docear seu Evento?</h2>
-          <p>Faça seu pedido agora mesmo e deixe a Maga Lanches transformar seu evento em uma experiência inesquecível!</p>
-          <a href="#contact" class="btn btn-primary">
-            <i class="fas fa-birthday-cake"></i> Fazer Pedido
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Entre em Contato</h2>
-          <p>Encomende seus produtos ou tire suas dúvidas</p>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3>Informações de Contato</h3>
-            <p>Estamos prontos para transformar seu evento com nossos produtos deliciosos e personalizados.</p>
-            
-            <div class="contact-info-card">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div>
-                <h4>Endereço</h4>
-                <p>Rua dos Doces, 123<br>Sorocaba, SP</p>
-              </div>
-            </div>
-            
-            <div class="contact-info-card">
-              <div class="contact-icon">
-                <i class="fas fa-phone-alt"></i>
-              </div>
-              <div>
-                <h4>Telefone</h4>
-                <p>(15) 984027089</p>
-                <p>(15) 984027089 (WhatsApp)</p>
-              </div>
-            </div>
-            
-            <div class="contact-info-card">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
-              <div>
-                <h4>E-mail</h4>
-                <p>contato@magalanches.com.br</p>
-              </div>
-            </div>
-
-            <div class="contact-info-card">
-              <div class="contact-icon">
-                <i class="fas fa-clock"></i>
-              </div>
-              <div>
-                <h4>Horário de Atendimento</h4>
-                <p>Segunda a Sexta: 8h às 18h<br>Sábado: 9h às 13h</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="contact-form">
-            <form action="#" method="post" id="contact-form">
-              <div class="form-group">
-                <label for="name">Nome Completo</label>
-                <input type="text" id="name" name="name" placeholder=" " required>
-              </div>
-              <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder=" " required>
-              </div>
-              <div class="form-group">
-                <label for="phone">Telefone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" ">
-              </div>
-              <div class="form-group">
-                <label for="service">Tipo de Pedido</label>
-                <select id="service" name="service" required>
-                  <option value=""> </option>
-                  <option value="bolos">Bolos</option>
-                  <option value="doces">Doces Finos</option>
-                  <option value="salgados">Salgados</option>
-                  <option value="buffet">Buffet Completo</option>
-                  <option value="outros">Outros</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="event-date">Data do Evento</label>
-                <input type="date" id="event-date" name="event-date" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Detalhes do Pedido</label>
-                <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar Pedido</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3><img src="https://i.supaimg.com/2dbbbd6c-6d54-44ec-b651-a115ee2aae71.png" alt="Maga Lanches Logo" style="height: 50px; margin-bottom: 15px;"></h3>
-          <p>Confeitaria premium especializada em bolos, doces e salgados artesanais para tornar seus momentos ainda mais doces.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
-          </div>
-        </div>
-        <div>
-          <h4>Links Rápidos</h4>
-          <ul class="footer-links">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#products">Produtos</a></li>
-            <li><a href="#gallery">Galeria</a></li>
-            <li><a href="#about">Sobre Nós</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Nossos Produtos</h4>
-          <ul class="footer-links">
-            <li><a href="#">Bolos Personalizados</a></li>
-            <li><a href="#">Doces Finos</a></li>
-            <li><a href="#">Salgados Gourmet</a></li>
-            <li><a href="#">Buffet Completo</a></li>
-            <li><a href="#">Kits para Presente</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Newsletter</h4>
-          <p>Inscreva-se para receber nossas novidades e promoções exclusivas.</p>
-          <form class="footer-form">
-            <input type="email" placeholder=" " required>
-            <button type="submit" class="btn btn-primary">Inscrever</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Maga Lanches Confeitaria. Todos os direitos reservados. | Desenvolvido com <i class="fas fa-heart" style="color: var(--accent);"></i> para doces momentos</p>
-      </div>
+        <div class="divider"></div>
     </div>
-  </footer>
 
-  <button class="back-to-top" aria-label="Voltar ao topo">
-    <i class="fas fa-arrow-up"></i>
-  </button>
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossa <span class="gold-accent">Galeria</span></h2>
+                <p>Alguns dos nossos trabalhos mais requintados</p>
+            </div>
 
-  <!-- JavaScript separado -->
-  <script src="js/script.js"></script>
+            <div class="grid grid-cols-3">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Bolo de Aniversário" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bolo de Aniversário</h3>
+                        <p>Com tema personalizado e detalhes em folha de ouro</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Doces Finos" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3>Coleção de Doces</h3>
+                        <p>Seleção de macarons, brigadeiros gourmet e trufas</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1602351447937-745cb720612f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Torta de Frutas" loading="lazy">
+                    </div>
+                    <div class="product-content">
+                        <h3>Torta Seasonal</h3>
+                        <p>Com frutas frescas da estação e detalhes em ouro</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section" style="background: var(--darker); color: white; padding-top: 100px;">
+        <div class="container">
+            <div class="grid grid-cols-4">
+                <div>
+                    <h3><img src="https://i.supaimg.com/2dbbbd6c-6d54-44ec-b651-a115ee2aae71.png" alt="Maga Lanches Logo" style="height: 60px; margin-bottom: 20px;"></h3>
+                    <p style="color: rgba(255,255,255,0.7);">Confeitaria premium especializada em criar experiências memoráveis através da doçura.</p>
+                </div>
+                <div>
+                    <h4 style="color: white;">Links Rápidos</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="#home" style="color: rgba(255,255,255,0.7); text-decoration: none; transition: var(--transition);">Início</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#products" style="color: rgba(255,255,255,0.7); text-decoration: none; transition: var(--transition);">Produtos</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#gallery" style="color: rgba(255,255,255,0.7); text-decoration: none; transition: var(--transition);">Galeria</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#contact" style="color: rgba(255,255,255,0.7); text-decoration: none; transition: var(--transition);">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: white;">Contato</h4>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--gold);"></i> Rua dos Doces, 123 - Sorocaba, SP</p>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px;"><i class="fas fa-phone-alt" style="margin-right: 10px; color: var(--gold);"></i> (15) 98402-7089</p>
+                    <p style="color: rgba(255,255,255,0.7);"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--gold);"></i> contato@magalanches.com.br</p>
+                </div>
+                <div>
+                    <h4 style="color: white;">Redes Sociais</h4>
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="#" style="color: white; background: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: var(--transition);"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: white; background: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: var(--transition);"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color: white; background: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: var(--transition);"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 60px; padding: 30px 0; text-align: center; color: rgba(255,255,255,0.5);">
+                <p>&copy; 2025 Maga Lanches. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
-      </html>
+</html>
